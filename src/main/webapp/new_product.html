@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>List of Products - New Product</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Create a new Product</h1>
+	<form name="frmProduct" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="name" placeholder="Name"
+					class="box1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="description" placeholder="Description"
+					class="box2"></td>
+			</tr>
+			<tr>
+				<td><input type="number" name="value" placeholder="Value" step="0.01" min="0"
+					class="box1"></td>
+			</tr>
+			
+			<tr>
+	    		<td>
+			        <label for="available">Available</label>
+			        <input type="checkbox" id="available" name="available" value="true">
+	    		</td>
+			</tr>
+			
+		</table>
+		<input type="button" value="Add" class="button1"
+			onclick="validate()">
+	</form>
+	<script src="scripts/validator.js"></script>
+</body>
+</html>
